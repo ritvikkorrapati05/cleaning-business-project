@@ -9,6 +9,9 @@ export default defineConfig({
     port: 3000,
     allowedHosts: true,
   },
+  build: {
+    outDir: 'dist',
+  },
   plugins: [
     tailwindcss(),
     tsConfigPaths({
